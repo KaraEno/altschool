@@ -1,0 +1,39 @@
+body {
+  background-color: black;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 70px auto 0;
+  width: 400px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.header {
+  padding: 20px;
+  border-radius: 10px;
+  margin: -30px 20px 0;
+  text-align: center;
+  background-color: #ff1093;
+}
+
+.essay {
+  padding: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    width: 250px;
+  }
+
+  .header {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .essay {
+    margin-top: 10px;
+  }
+}

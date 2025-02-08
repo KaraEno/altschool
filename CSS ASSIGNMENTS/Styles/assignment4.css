@@ -1,0 +1,138 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sofia-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+
+.container {
+  height: 100vh;
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 81px 140px;
+  background-color: #f7fdfc;
+  gap: 120px;
+  /* align-items: center; */
+}
+.section_1 {
+  width: 50%;
+  /* border: 1px solid black; */
+  margin-top: 124px;
+}
+.section_1_container {
+  width: 460px;
+  /* border: 1px solid red; */
+}
+.hero h2 {
+  font-size: 40px;
+  color: #000b0a;
+}
+.hero p {
+  font-size: 16px;
+  color: #737373;
+}
+.section_2 {
+  width: 50%;
+}
+.form {
+  width: 80%px;
+  padding: 40px;
+  background-color: white;
+  box-shadow: 0px 4px 50px rgba(4, 8, 19, 0.1);
+  border-radius: 6px;
+}
+.form input,
+.form select {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #f0f0f0;
+}
+button {
+  width: 100%;
+  height: 48px;
+  background-color: #2ec4b6;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  border: none;
+}
+.form_fields {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 30px;
+
+  /* border: 3px solid red; */
+}
+.single_fields {
+  margin-bottom: 30px;
+  position: relative;
+}
+.form_fields div {
+  /* border: 1px solid green; */
+  width: 100%;
+}
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.agreement {
+  text-align: center;
+}
+.agreement a {
+  color: #2ec4b6;
+}
+.eye {
+  position: absolute;
+  right: 5px;
+  top: 45px;
+}
+@media screen and (min-width: 768px) and (max-width: 1300px) {
+  .container {
+    display: block;
+  }
+  .section_1,
+  .section_2 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    display: block;
+    padding: 30px 24px;
+  }
+  .section_1,
+  .section_2 {
+    width: 100%;
+    padding-bottom: 40px;
+  }
+  .section_1_container {
+    width: 100%;
+  }
+  .form {
+    padding: 16px 24px;
+  }
+  .form_fields,
+  .single_fields {
+    display: block;
+    margin-bottom: 0;
+    /* border: 1px solid black; */
+    width: 100%;
+  }
+  .form input,
+  .form select {
+    margin-bottom: 24px;
+    /* padding-left: 16px; */
+  }
+  .agreement {
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .agreement a {
+    font-weight: 500;
+  }
+}
